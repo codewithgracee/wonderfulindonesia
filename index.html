@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonderful Indonesia</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Wonderful Indonesia</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="articles.html">Articles</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Selamat Datang di <i>Wonderful Indonesia</i>!</h1>
+        <img
+          src="wonderfulindo.png"
+          alt="Logo Wonderful Indonesia"
+          width="400"
+        />
+        <h2>Mari jelajahi indahnya Indonesia. Lebih dalam, lebih dekat.</h2>
+
+        <p>Temukan destinasi dan atraksi terbaik!</p>
+        <img
+          src="greymapindo.png"
+          alt="Indonesia's Full Map"
+          class="responsive-img"
+        />
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery">
+        <h2>Explore Indonesia</h2>
+        <div class="gallery-container">
+          <img src="bali.jpg" alt="Bali" />
+          <img src="rajaampat.jpg" alt="Raja Ampat" />
+          <img src="bromo.jpg" alt="Bromo" />
+        </div>
+      </section>
+
+      <!-- Newsletter Form -->
+      <section class="newsletter">
+        <div class="container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Dapatkan update terbaru tentang destinasi wisata Indonesia.</p>
+
+          <form id="myForm" class="p-4 shadow rounded bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Masukkan nama kamu"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Masukkan email kamu"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Subscribe
+            </button>
+          </form>
+
+          <!-- Result -->
+          <div id="result" class="mt-4 alert d-none"></div>
+          <div id="oke" class="mt-2"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Grace Cynthia. All rights reserved.</p>
+      <p>
+        Follow me on
+        <a href="https://instagram.com/gracee.cy" target="_blank">Instagram</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

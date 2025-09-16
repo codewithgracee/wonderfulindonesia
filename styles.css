@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* STYLING BUAT NAVBAR GUYSSS (ini jenis styling eksternal) */
+.navbar {
+  position: relative; /* untuk posisi absolut ul */
+  display: flex;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  height: 70px;
+}
+
+/* Logo di kiri */
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 2; /* biar nggak ketimpa nav-links */
+}
+
+/* List menu di tengah */
+.nav-links {
+  list-style: none; /* Menghilangkan bullet/numerik bawaan dari <ul> atau <ol> */
+  display: flex; /* Mengatur item <li> agar ditata horizontal dalam satu baris */
+  gap: 2rem; /* Memberi jarak 2rem antar item menu di dalam navbar */
+  position: absolute; /* Mengatur posisi absolut relatif terhadap .navbar (karena .navbar posisinya relatif) */
+  left: 50%; /* Memindahkan titik awal elemen ke 50% dari lebar kontainer (navbar) */
+  transform: translateX(
+    -50%
+  ); /* Menggeser elemen ke kiri sejauh 50% dari lebarnya sendiri agar benar-benar di tengah */
+  z-index: 1; /* Mengatur tumpukan elemen agar tidak ketumpuk elemen lain (contohnya: logo) */
+}
+
+/* Link di dalam menu */
+.nav-links li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* kasih efek hover */
+.nav-links li a:hover {
+  color: #1abc9c;
+}
+
+/* section hero */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/*bagian ini tuh supaya gambar peta indonesianya selalu stay di tengah.  */
+.responsive-img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* semua yang ada .gallery nya ini buat styling image gallery yah */
+.gallery {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.gallery-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ini styling buat footer */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ini styling buat domform */
+.newsletter {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: inherit;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.newsletter p {
+  color: #555;
+  margin-bottom: 2rem;
+}
